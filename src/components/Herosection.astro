@@ -1,0 +1,59 @@
+<section>
+    <div class="herosection">
+      <!-- Mobile video -->
+      <video autoplay muted loop playsinline class="herosection_video herosection_video--mobile">
+        <source src="/GRUMS/mp4/herosection_mobile.mp4" type="video/mp4" />
+      </video>
+  
+      <!-- Desktop video -->
+      <video autoplay muted loop playsinline class="herosection_video herosection_video--desktop">
+        <source src="/GRUMS/mp4/herosection_desktop.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+
+<style>
+
+.herosection {
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.herosection_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; 
+}
+
+.herosection_video--mobile {
+  display: block; 
+}
+
+    @media (min-width: 750px) {
+
+        .herosection_video--mobile {
+    display: none; 
+  }
+
+  .herosection_video--desktop {
+    display: block; 
+  }
+
+        .herosection {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .herosection, video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+    }
+</style>
