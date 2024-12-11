@@ -1,0 +1,87 @@
+<section>
+    <footer class="footer">
+        <div class="footer-content">
+          
+          <div class="footer-adresse">
+            <p>nørrebrogade 161</p>
+            <p>2200 københavn</p>
+          </div>
+
+          <div class="footer-kontakt">
+            <p>instagram</p>
+            <p>grums@cafe.dk</p>
+          </div>
+    
+      
+          <div class="footer-logo">
+            <img src="/GRUMS/elementer/grums_footer.png" alt="Grums Logo" />
+          </div>
+      
+        </div>
+      </footer>
+</section>
+
+<style>
+    
+    .footer {
+  font-family: 'Karla', sans-serif; 
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-adresse, .footer-kontakt {
+  line-height: 1.6;
+}
+
+.footer-logo img {
+  width: 250px; 
+  height: auto;
+}
+
+.footer-adresse p, .footer-kontakt p {
+  font-size: 16px;
+  margin: 0;
+  text-align: center; 
+}
+
+
+@media (min-width: 750px) {
+    .footer-adresse p, .footer-kontakt p {
+  font-size: 20px;
+  margin: 0;
+  text-align: center; 
+}
+
+
+ .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+ }
+
+
+ .footer-kontakt{
+    display: grid;
+    grid-column: 3/4;
+ }
+
+ .footer-logo{
+    display: grid;
+    grid-column: 2/3;
+    transform: scale(2.5);
+    padding-left: 60px;
+ }
+
+
+}
+
+
+</style>
