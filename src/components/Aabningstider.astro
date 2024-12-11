@@ -1,0 +1,149 @@
+<section>
+<div class="toppen">
+    <div class="aabningstider">
+    <h3>åbningstider</h3>
+    <div class="schedule">
+        <ul>
+          <li><span>man</span> <span>07:30-18:00</span></li>
+          <li><span>tir - ons</span> <span>07:30-20:00</span></li>
+          <li><span>tor - fre</span> <span>07:30-22:00</span></li>
+          <li><span>lør</span> <span>09:00-22:00</span></li>
+          <li><span>søn</span> <span>09:00-18:00</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="image-container">
+        <img class="aften_vin" src="/GRUMS/img/aften_vin.webp" alt="aften">
+    </div>
+</div>
+    <div class="grums-container">
+        <p>grums</p>
+        <p>grums</p>
+        <p>grums</p>
+        <p>grums</p>
+        <p>grums</p>
+    </div>
+
+    <div class="image-container">
+        <img src="/GRUMS/img/dag_bog.webp" alt="bog">
+    </div>
+</section>
+
+<style>
+
+    h3{
+        font-family: 'Kepler Std', sans-serif;
+        font-style: italic; 
+        font-weight: 400;
+        text-align: center;
+        font-size: 30px;
+        color: #920000;
+    }
+ 
+ .schedule {
+    font-family: "Karla", sans-serif;
+  max-width: 600px; /* Sætter en maksimal bredde */
+  margin: 0 auto; /* Centrerer containeren på siden */
+  padding: 0 125px; /* Tilføjer indrykning fra siderne */
+}
+
+.schedule ul {
+  list-style: none; 
+  padding: 15px;
+  margin: 0;
+}
+
+.schedule li {
+  display: flex;
+  justify-content: space-between; /* Justerer tekstindholdet mellem kolonnerne */
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #000;
+}
+
+.schedule li span:first-child {
+  text-align: left;
+}
+
+.schedule li span:last-child {
+  text-align: right;
+}
+
+img {
+    transform: scale(0.9);
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Billed-container */
+.image-container {
+    text-align: center;
+    margin-bottom: 150px; 
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    transform: scale(0.9); 
+}
+
+/* Grums-container */
+.grums-container {
+    position: absolute;
+    text-align: left; 
+    margin-left: 70px;
+    margin-top: -245px;
+    z-index: 10;
+    font-family: 'Kepler Std', italic, sans-serif;
+    color: #920000;
+    font-size: 48px;
+    line-height: 0.2; 
+}
+
+@media (min-width: 750px) {
+
+.toppen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 20px; 
+}
+
+.aften_vin {
+    grid-column: 2/3; 
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    transform-origin: center;
+    transform: scale(1.5); 
+}
+
+.aabningstider {
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 70px;
+    margin-left: -100px;
+}
+
+h3 {
+    font-size: 50px;
+    text-align: left;
+    margin-left: 138px;
+}
+
+.schedule li {
+ 
+  font-size: 20px;
+ 
+}
+
+
+}
+
+</style>
