@@ -1,0 +1,117 @@
+<section>
+
+    <div class="tjek_menu">
+    <img class="cafe" src="/GRUMS/img/dag_cafe.webp" alt="cafe">
+
+    <div class="tjek_menu_tekst">
+    <h3>tjek vores menu ud</h3>
+
+    <div class="menu-knap-container">
+        <a class="menu-knap" href="/Menu">
+            menu
+        </a>
+    </div>
+</div>
+</div>
+
+
+</section>
+
+
+<style>
+
+h3{
+        font-family: 'Kepler Std', sans-serif;
+        font-style: italic; 
+        font-weight: 400;
+        text-align: center;
+        font-size: 30px;
+        color: #920000;
+    }
+
+    img {
+    transform: scale(0.9);
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+    padding-top: 60px;
+}
+
+
+.menu-knap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 28.5px;
+    background-color: #920000;
+    color: #F3F0E9;
+    font-family: 'Kepler Std', italic, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-knap-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; 
+}
+
+.menu-knap:hover {
+    background-color: #F3F0E9;
+    color: #920000;
+    border: 2px solid #920000;
+    text-decoration: none;
+}
+
+
+@media (min-width: 750px) {
+
+h3 {
+    font-size: 50px;
+}
+
+.tjek_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-knap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 164px;
+    height: 53px;
+    background-color: #920000;
+    color: #F3F0E9;
+    font-family: 'Kepler Std', italic, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cafe{
+    grid-column: 2;
+    margin-top: -250px;
+    margin-left: -90px;
+}
+
+.tjek_menu_tekst{
+    grid-column: 1;
+    margin-top: -300px;
+}
+
+}
+
+</style>
