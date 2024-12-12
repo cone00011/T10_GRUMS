@@ -1,0 +1,141 @@
+
+<section>
+    <h1>events</h1>
+
+    <div class="event-container">
+        <div class="event">
+            <div>
+                <h3>palæstina kranse <br>1. december 18:00</h3>
+                <p>kom og lav en palæstina krans med rhodflowers. Overskuddet går til stop annektering.</p>
+            </div>
+            <img class="spiral" src="/GRUMS/elementer/spiral_stor.png" alt="spiral">
+            <img class="palæstina" src="/GRUMS/img/palæstina.webp" alt="palæstina">
+            <img class="palæstina-event2" src="/GRUMS/img/palæstina_event2.webp" alt="palæstina event 2">
+        </div>
+
+        <div class="event">
+            <div>
+                <h3>beaujolais <br>8. december 20:00</h3>
+                <p>kom og oplev smagen af årets Beaujolais! <br>For hvert glas du køber, følger en lækker snack.</p>
+            </div>
+            <img class="spiral" src="/GRUMS/elementer/spiral_stor.png" alt="spiral">
+            <img class="palæstina" src="/GRUMS/img/beaujolais.webp" alt="beaujolais">
+            <img class="palæstina-event2" src="/GRUMS/img/beaujolais2.webp" alt="palæstina event 2">
+        </div>
+    </div>
+</section>
+
+
+<style>
+h1 {
+    font-family: "Karla", sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    color: #920000;
+    padding-top: 90px;
+}
+
+h3 {
+    font-family: 'Kepler Std', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    color: #920000;
+    padding-top: 5px;
+}
+
+p {
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    max-width: 45ch;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    transform: scale(1);
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.palæstina {
+    margin-top: -300px;
+    z-index: 3;
+}
+
+.spiral {
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.palæstina-event2 {
+    display: none; 
+    position: relative; 
+    z-index: 4; 
+}
+
+@media (min-width: 750px) {
+
+    h1 {
+        font-size: 85px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .event {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: -200px;
+        align-items: center;
+    }
+
+    .palæstina {
+        grid-column: 2;
+        margin-top: -1200px;
+        transform: scale(1.3);
+    }
+
+    .spiral {
+        transform: scale(0.6);
+        grid-column: 1 / span 2;
+        margin-top: -500px;
+    }
+
+    .palæstina-event2 {
+        display: block; 
+        grid-column: 1;
+        align-self: start;
+        width: 70%; 
+        margin-top: -648px; 
+        margin-left: 200px;
+        position: relative; 
+        z-index: 4; 
+    }
+}
+
+</style>
