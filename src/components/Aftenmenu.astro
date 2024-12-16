@@ -91,6 +91,7 @@ const { data }: { data: MenuItem[] } = Astro.props;
     width: 1px; 
     height: 100%; 
     position: absolute; 
+    margin: -20px;
 }
 
 .menu-item {
@@ -102,7 +103,8 @@ const { data }: { data: MenuItem[] } = Astro.props;
     text-align: left;
     font-weight: 400;
     color: #000000;
-    padding-left: 10px;
+    padding-left: 15px;
+    max-width: 12ch;
 }
 
 .item-price {
@@ -110,7 +112,8 @@ const { data }: { data: MenuItem[] } = Astro.props;
     text-align: right;
     font-weight: 400;
     color: #000000;
-    padding-right: 12px;
+    padding-right: 15px;
+    margin-right: 15px;
 }
 
 @media (min-width: 750px) {
@@ -146,6 +149,7 @@ const { data }: { data: MenuItem[] } = Astro.props;
     .item-name {
         font-size: 18px; 
         padding-left: 20px; 
+        max-width: 19ch;
     }
 
     .item-price {
